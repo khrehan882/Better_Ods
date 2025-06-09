@@ -1,0 +1,52 @@
+@media (max-width: 1440px) {
+}
+    @media (max-width: 1280px) {
+    .potential-section{
+        display: flex;
+        flex-direction: column;
+    align-items: center;
+    }
+
+    .potential-section .graph{
+        width: 80%;
+    }
+    
+    .potential-section .content{
+        width: 80%;
+    }
+    
+
+}
+
+@media (max-width: 1024px) {
+    .header .link {
+        display: none;
+    }
+    
+}
+
+
+
+@media (max-width: 768px) {
+    .card-container {
+    display: flex;
+    flex-direction: column;
+    
+    }
+    
+    .card {
+        width: 100%;
+        /* One card per row on smaller screens */
+    }
+}
+
+
+
+@media (max-width: 580px) {
+    .header .logo span{
+        display: none;
+    }
+
+}
+
+

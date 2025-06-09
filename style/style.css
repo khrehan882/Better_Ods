@@ -1,0 +1,698 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --pink: #9214F1;
+    /* Removed quotes */
+    --light-green: #9DFBC1;
+    /* Removed quotes */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Base typography */
+body {
+    font-family: var(--poppins);
+    background-color: black;
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    line-height: normal;
+}
+
+.main {
+    color: white;
+    min-height: 100vh;
+}
+
+/* header start */
+.header {
+    width: 100%;
+}
+
+.header .nav {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 0;
+    margin: 0 auto;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header .logo span {
+    font-size: 30px;
+    color: var(--pink);
+    font-weight: 600;
+
+}
+
+.header .link {
+    display: flex;
+    align-items: center;
+}
+
+.header .link ul {
+    list-style: none;
+    display: flex;
+    gap: 43px;
+}
+
+.header .link a {
+    text-decoration: none;
+    color: white;
+}
+
+.header .buttons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.header .login {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #9DFBC1;
+}
+
+.header .register {
+    background-color: var(--pink);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 14px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+
+
+/* header end */
+
+
+/* hero start */
+.hero-container-section {
+    width: 100%;
+    position: relative;
+}
+
+.hero-section {
+    margin: 0 auto;
+    /* Adjust this value to match your navbar's height */
+    background-image: url('./../asset/img/hero.png');
+    /* Replace with the actual path to your image */
+    background-size: cover;
+    /* Ensures the image covers the entire section */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    height: 100vh;
+    width: 96vw;
+    /* Optional: Makes the hero section take up the full viewport height */
+    display: flex;
+    /* Optional: Aligns content inside the section */
+    flex-direction: column;
+    /* Stacks children elements vertically */
+    align-items: center;
+    /* Horizontally centers content */
+    gap: 10vh;
+    border-radius: 15px;
+    text-align: center;
+    /* Centers text */
+    color: white;
+    /* Ensures text is visible on a dark background */
+    position: relative;
+}
+
+.hero-section h1 {
+    margin-top: 10vh;
+    font-size: 56px;
+}
+
+.hero-section h1 span {
+    color: var(--pink);
+}
+
+.hero-section .register {
+    background-color: var(--pink);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 14px;
+}
+
+.hero-container-section .gredient-purple {
+    position: absolute;
+    bottom: -280px;
+    right: 0;
+    z-index: -1;
+}
+
+.hero-container-section .gredient-green {
+    position: absolute;
+    bottom: -280px;
+    left: 0;
+    z-index: -1;
+}
+
+/* hero end */
+
+
+/* brand start */
+.brands-section {
+    width: 96%;
+    margin: 0 auto;
+    padding: 10vh 0;
+    overflow: hidden;
+    /* Hide overflowing content */
+}
+
+.brands-section .logo {
+    padding: 16px 24px;
+    border: #757575 solid 1px;
+    border-radius: 10px;
+}
+
+.brands-section .brand1 {
+    display: flex;
+    gap: 20px;
+    animation: slide 10s linear infinite;
+    /* Sliding animation */
+    will-change: transform;
+    /* Optimizes animation performance */
+}
+
+.brands-section .brand2 {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    animation: slide2 10s linear infinite;
+    /* Sliding animation */
+    will-change: transform;
+    /* Optimizes animation performance */
+}
+
+
+
+
+/* Keyframes for sliding animation */
+@keyframes slide {
+    from {
+        transform: translateX(100%);
+        /* Start logos outside the visible area */
+    }
+
+    to {
+        transform: translateX(-100%);
+        /* Slide completely to the left */
+    }
+}
+
+@keyframes slide2 {
+    from {
+        transform: translateX(-100%);
+        /* Start logos outside the visible area */
+    }
+
+    to {
+        transform: translateX(100%);
+        /* Slide completely to the left */
+    }
+}
+
+
+/* brand end */
+
+/* potential start */
+.potential-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10vw;
+    position: relative;
+    z-index: 0;
+}
+
+.potential-section .graph {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.potential-section .graph h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.potential-section .graph span {
+    color: var(--pink);
+}
+
+
+.potential-section .graph-img {
+    margin-top: 130px;
+
+    /* Prevent image overflow */
+}
+
+.potential-section .graph-img img {}
+
+
+
+.potential-section .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 220px;
+
+}
+
+.potential-section .content h2 {
+    color: #9DFBC1;
+    font-size: 22px;
+    margin-bottom: 10px;
+
+}
+
+.potential-section .circle {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    /* Make the container take up 100% width */
+    max-width: 900px;
+    /* Optional: Limit the maximum width */
+    height: auto;
+    /* Ensure the aspect ratio is maintained */
+    z-index: -1;
+}
+
+.potential-section .circle img {
+    width: 100%;
+    /* Make the image responsive */
+    /* Maintain the aspect ratio */
+    /* Removes any extra space below the image */
+}
+
+
+
+/* potential end */
+
+
+/* driven start */
+.driven-data-section {
+    margin: 60px auto;
+    /* Adjust this value to match your navbar's height */
+    background-image: url('./../asset/img/data-drive.png');
+    /* Replace with the actual path to your image */
+    background-size: cover;
+    /* Ensures the image covers the entire section */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+
+    /* Horizontally centers content */
+    border-radius: 15px;
+    /* Centers text */
+    width: 96%;
+    position: relative;
+    z-index: 0;
+}
+
+.driven-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10vh 0;
+}
+
+.driven-section .heading {
+    margin: 50px 0;
+}
+
+.driven-section .heading button {
+    background-color: var(--pink);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 6px 14px;
+    margin-bottom: 20px;
+}
+
+.driven-section .heading h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.driven-section .heading h1 span {
+    color: #9214F1;
+}
+
+.driven-section .card-container {
+    width: 100%;
+    display: flex;
+    gap: 2vw;
+    margin: 2vh 0;
+}
+
+.driven-section .card {
+    flex: 1;
+    /* Default to full width */
+    box-sizing: border-box;
+
+    background-color: #1D0A40;
+    /* Background color for the card */
+    border-radius: 14px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Light shadow for effect */
+    text-align: start;
+    /* Centering text */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.driven-section .card img {
+    width: 100%;
+    max-height: 200px;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.driven-section .card h3 {
+    font-size: 22px;
+    color: #3AB471;
+    ;
+    margin-bottom: 10px;
+    padding: 0 40px;
+    padding-top: 40px;
+}
+
+.driven-section .card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 0 40px;
+    padding-top: 10px;
+}
+
+.driven-section .card:hover {
+    transform: translateY(-5px);
+    /* Slight lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow on hover */
+}
+
+
+/* driven end */
+
+/* testimonials start */
+
+
+.testimonials-review-section {
+    margin: 60px auto;
+    /* Adjust this value to match your navbar's height */
+    /* background-image: url('./../asset/img/testimonial.png'); */
+    /* Replace with the actual path to your image */
+    background-size: cover;
+    /* Ensures the image covers the entire section */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+
+    /* Horizontally centers content */
+    border-radius: 15px;
+    /* Centers text */
+    width: 96%;
+}
+
+.testimonials-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonials-section .section-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.testimonials-section .section-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+.testimonials-section .testimonials-container {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.testimonials-section .testimonial-card {
+    flex: 1;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: left;
+}
+
+.testimonials-section .testimonial-card-2 {
+    flex: 1;
+    border-radius: 1rem;
+    text-align: left;
+
+}
+
+.testimonials-section .purple-card {
+    background-color: #b341f4;
+}
+
+.testimonials-section .white-card {
+    background-color: white;
+    color: black;
+}
+
+.testimonials-section .reviewer-name {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.testimonials-section .stars {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.testimonials-section .testimonial-card-2 .stars {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.testimonials-section .review-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.testimonials-section .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.testimonials-section .page-indicator {
+    background-color: #b341f4;
+    padding: 0.5rem 1rem;
+    border-radius: 0.1rem;
+}
+
+.testimonials-section .nav-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.1rem;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+.testimonials-section .prev-button {
+    background-color: transparent;
+    color: #22c55e;
+    border: 1px solid #22c55e;
+    margin-right: 15px;
+}
+
+.testimonials-section .next-button {
+    background-color: #b341f4;
+    color: white;
+}
+
+
+/* testimonials end */
+
+/* cta section start */
+
+.cta-footer-section {
+    position: relative;
+}
+
+.cta-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+}
+
+.cta-section .hero-content {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.cta-section .hero-title {
+    font-size: 56px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.cta-section .purple-text {
+    color: #b341f4;
+}
+
+.cta-section .hero-description {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.6;
+}
+
+.cta-section .cta-button {
+    display: inline-block;
+    background-color: #b341f4;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    margin-top: 56px;
+
+}
+
+.cta-section.cta-button:hover {
+    background-color: #9931d8;
+}
+
+.cta-section .logo-container {
+    margin: 4rem 0;
+}
+
+.cta-section .logo {
+    width: 300px;
+    height: auto;
+}
+
+.cta-section .logo-text {
+    color: #b341f4;
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.cta-section .footer {
+    margin-bottom: 20px;
+    padding: 2rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.cta-footer-section .cross-image {
+    position: absolute;
+    top: 140px;
+    left: 0;
+}
+
+.cta-footer-section .round-logo {
+    position: absolute;
+    top: 50%;
+    right: 80px;
+    transform: translateY(-50%);
+}
+
+.cta-footer-section .union-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.cta-footer-section .gredient-green {
+    position: absolute;
+    top: 60%;
+    left: 0px;
+    transform: translateY(-50%);
+}
+
+.cta-footer-section .gredient-green img {
+    width: 280px;
+}
+
+.cta-footer-section .gredient-purple {
+
+    position: absolute;
+    top: -400px;
+    right: 0;
+    z-index: -1;
+}
+
+.cta-footer-section .union-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+/* landing section end */

@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --pink: #9214F1;
+    /* Removed quotes */
+    --light-green: #9DFBC1;
+    /* Removed quotes */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Base typography */
+body {
+    font-family: var(--poppins);
+    background-color: black;
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    line-height: normal;
+}
+
+.main {
+    color: white;
+    min-height: 100vh;
+}
+
+/* header start */
+.header {
+    width: 100%;
+}
+
+.header .nav {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 0;
+    margin: 0 auto;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header .logo span {
+    font-size: 30px;
+    color: var(--pink);
+    font-weight: 600;
+
+}
+
+.header .link {
+    display: flex;
+    align-items: center;
+}
+
+.header .link ul {
+    list-style: none;
+    display: flex;
+    gap: 43px;
+}
+
+.header .link a {
+    text-decoration: none;
+    color: white;
+}
+
+.header .buttons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.header .login {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #9DFBC1;
+}
+
+.header .register {
+    background-color: var(--pink);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 14px;
+}
+
+
+/* header end */
+
+
+/* feature start */
+.feature-section-1 {
+    margin: 10vh 0;
+}
+
+.feature-section-1 .opportunities-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+
+.feature-section-1 .content-left {
+    flex: 1;
+}
+
+.feature-section-1 .label {
+    background-color: #b341f4;
+    color: white;
+    padding: 4px 22px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 36px;
+}
+
+.feature-section-1 .content-left h1 {
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.feature-section-1 .content-left p {
+    font-size: 16px;
+    margin-bottom: 57px;
+    line-height: 1.6;
+}
+
+.feature-section-1 .feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.feature-section-1 .feature-icon {
+    background-color: rgba(139, 92, 246, 0.2);
+    padding: 1rem;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-section-1 .feature-content h3 {
+    color: #b341f4;
+    font-size: 22px;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.feature-section-1 .feature-content p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.feature-section-1 .card-container {
+    flex: 1;
+
+}
+
+.feature-section-1 .card {
+    background-color: #1a103c;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin-top: 50px;
+}
+
+.feature-section-1 .card h2 {
+    color: #22c55e;
+    font-size: 22px;
+    margin-bottom: 1rem;
+    padding: 0 2vw;
+    padding-top: 2vh;
+}
+
+.feature-section-1 .card p {
+    color: #ffffff99;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    padding: 0 2vw;
+    padding-top: 0.5vh;
+    font-size: 14px;
+}
+
+.feature-section-1 .card img {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    padding-left: 2vw;
+}
+
+/* feature1 end */
+
+
+/* feature2 start */
+
+.feature-section-2 .dfs-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: space-between;
+}
+
+.feature-section-2 .card-container {
+    flex: 1;
+}
+
+
+.feature-section-2 .card {
+    background-color: #1a103c;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin-top: 50px;
+}
+
+.feature-section-2 .card h2 {
+    color: #22c55e;
+    font-size: 22px;
+    margin-bottom: 1rem;
+    padding: 0 2vw;
+    padding-top: 2vh;
+}
+
+.feature-section-2 .card p {
+    color: #ffffff99;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    padding: 0 2vw;
+    padding-top: 0.5vh;
+    font-size: 14px;
+}
+
+.feature-section-2 .card img {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    padding-left: 2vw;
+}
+
+
+
+.feature-section-2 .content-right {
+    flex: 1;
+}
+
+.feature-section-2 .label {
+    background-color: #9DFBC1;
+    color: black;
+    padding: 4px 22px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 36px;
+}
+
+.feature-section-2 .content-right h1 {
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.feature-section-2 .content-right p {
+    font-size: 16px;
+    margin-bottom: 57px;
+    line-height: 1.6;
+}
+
+.feature-section-2 .feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.feature-section-2 .feature-icon {
+    background-color: rgba(139, 92, 246, 0.2);
+    padding: 1rem;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-section-2 .feature-content h3 {
+    color: #9DFBC1;
+    font-size: 22px;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.feature-section-2 .feature-content p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+
+/* feature2 end */
+
+/* footer banner start */
+.footer-banner{
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 80px;
+}
+
+.footer-banner .content{
+    margin: 10vh 0;   
+    text-align: center;
+}
+
+.footer-banner .content h4{
+   font-size: 30px;
+   font-weight: 600;    
+   margin: 3vh 0;
+   line-height: 56px;
+   text-align: center;
+   
+
+
+}
+
+.footer-banner .content h4 span{
+   color: var(--pink);
+}
+
+.footer-banner .content p a{
+    margin: 5vh 0;   
+    color: var(--pink);
+}
+
+
+
+/* footer banner end */
+
+
+/* cta section start */
+
+.cta-footer-section {
+    position: relative;
+}
+
+.cta-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+}
+
+.cta-section .hero-content {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.cta-section .hero-title {
+    font-size: 56px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.cta-section .purple-text {
+    color: #b341f4;
+}
+
+.cta-section .hero-description {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.6;
+}
+
+.cta-section .cta-button {
+    display: inline-block;
+    background-color: #b341f4;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    margin-top: 56px;
+
+}
+
+.cta-section.cta-button:hover {
+    background-color: #9931d8;
+}
+
+.cta-section .logo-container {
+    margin: 4rem 0;
+}
+
+.cta-section .logo {
+    width: 300px;
+    height: auto;
+}
+
+.cta-section .logo-text {
+    color: #b341f4;
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.cta-section .footer {
+    margin-bottom: 20px;
+    padding: 2rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.cta-footer-section .cross-image {
+    position: absolute;
+    top: 140px;
+    left: 0;
+}
+
+.cta-footer-section .round-logo {
+    position: absolute;
+    top: 50%;
+    right: 80px;
+    transform: translateY(-50%);
+}
+
+.cta-footer-section .union-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.cta-footer-section .gredient-green {
+    position: absolute;
+    top: 60%;
+    left: 0px;
+    transform: translateY(-50%);
+}
+
+.cta-footer-section .gredient-green img {
+    width: 280px;
+}
+
+.cta-footer-section .gredient-purple {
+
+    position: absolute;
+    top: -400px;
+    right: 0;
+    z-index: -1;
+}
+
+.cta-footer-section .union-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+/* landing section end */
